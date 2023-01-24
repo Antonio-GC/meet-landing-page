@@ -19,8 +19,6 @@
 
 --font-size: 62.5%;
 
-
-
 }
 
 html {
@@ -33,4 +31,10 @@ body {
 
 .container {
     padding: 1rem 2rem;
+}
+
+.nav__imagen {
+    background-image: url(/assets/tablet/image-hero.png);
+    min-width: 20rem;
+    min-height: 50vh;
 }
