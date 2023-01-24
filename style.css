@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* primary color */
+
+--Soft-blue: #4D96A9;
+--purpure-dark: #855FB1;
+--Black : #28283D;
+--Gray: #87879D;
+--Light-blue: #8FE3F9;
+--Light-purpure: #D9B8FF;
+--white: #D9B8FF;
+
+/* value */
+
+--font-size: 62.5%;
+
+
+
+}
+
+html {
+    font-size: var(--font-size);
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.container {
+    padding: 1rem 2rem;
+}
