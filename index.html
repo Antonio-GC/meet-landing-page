@@ -1,61 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,400;0,600;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/style.css">
-  <title>Frontend Mentor | Meet landing page</title>
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,400;0,600;1,300;1,400;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Frontend Mentor | Meet landing page</title>
+  </head>
+  <body>
+    <header class="nav__header">
+      <div class="container">
+        <nav class="nav__header">
+          <img src="/assets/logo.svg" alt="" />
 
-<header>
-  <div class="container">
-    <nav>
-    
-          <img src="/assets/logo.svg" alt="">
-     
-   <div>
-     <div class="nav__imagen"></div>
-     <div></div>
-      <h1>GROUP CHAT FOR EVERYONE</h1>
-      <p>Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.</p>
-      <button>Download <span>v1.3</span> </button>
-      <button>What is it?</button>
-   </div>
-    
-    </nav>
-  </div>
-</header>  
-<main>
-  <img src="/assets/Group 6.png" alt="">
-  <div>
-    <img src="" alt="">
-    <img src="" alt="">
-    <img src="" alt="">
-    <img src="" alt="">
-  </div>
-  <div>
-    <p>Built for modern use</p>
-    <h3>Smarter meetings, all in one place</h3>
-    <p>Send messages, share files, show your screen, and record your meetings — all in one 
-  workspace. Control who can join with invite-only team access, data encryption, and data export.</p>
-  </div>
-</main>
-  
-<footer>
-  <h3>Experience more together</h3>
-  <p>Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.</p>
-  <button>Download <span>v1.3</span></button>
-</footer>
+          <div>
+            <div>
+              <div>
+                <img
+                  class="nav__imagen"
+                  src="/assets/tablet/image-hero.png"
+                  srcset=""
+                  alt=""
+                />
+              </div>
+              <div>
+                <h1 class="nav__title">GROUP CHAT FOR EVERYONE</h1>
+                <p class="nav__text">
+                  Meet makes it easy to connect with others face-to-face
+                  virtually and collaborate across any device.
+                </p>
+                <div class="container__btn">
+                  <button class="btn--blue">
+                  Download <span class="text--opacity">v1.3</span>
+                </button>
+                <button class="btn--purpure">What is it?</button>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="container__main">
+      <div class="container">
 
-  
-  
+   
+      <img class="imagen__arrow-number" src="/assets/Group 6.png" alt="" />
+      <div class="main__ilustration">
+        <img class="ilustration__imagen" src="/assets/Bitmap.png" alt="" />
+        <img class="ilustration__imagen" src="/assets/Bitmap Copy.png" alt="" />
+        <img class="ilustration__imagen" src="/assets/Bitmap Copy 2.png" alt="" />
+        <img class="ilustration__imagen" src="/assets/Bitmap Copy 3.png" alt="" />
+      </div>
+      <div class="info">
+        <p class="info__text--blue">Built for modern use</p>
+        <h3 class="info__title">Smarter meetings, all in one place</h3>
+        <p class="info__text">
+          Send messages, share files, show your screen, and record your meetings
+          — all in one workspace. Control who can join with invite-only team
+          access, data encryption, and data export.
+        </p>
+      </div>
+    </div>
+    </main>
 
-  
-</body>
+    <footer class="footer__container">
+      <div class="container">
+        <h3>Experience more together</h3>
+      <p>
+        Stay connected with reliable HD meetings and unlimited one-on-one and
+        group video sessions.
+      </p>
+      <button>Download <span>v1.3</span></button>
+      </div>
+      
+    </footer>
+  </body>
 </html>

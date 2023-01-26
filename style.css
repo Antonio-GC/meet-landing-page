@@ -13,10 +13,10 @@
 --Gray: #87879D;
 --Light-blue: #8FE3F9;
 --Light-purpure: #D9B8FF;
---white: #D9B8FF;
+--white: #FFFFFF;
 
 /* value */
-
+--padding-container-mobile: 0 1.6rem;
 --font-size: 62.5%;
 
 }
@@ -25,16 +25,132 @@ html {
     font-size: var(--font-size);
 }
 
+img {
+    display: block;
+    max-width: 100%;
+}
+
+button {
+    border: none;
+}
+
 body {
     font-family: 'Red Hat Display', sans-serif;
 }
 
+
+
+
 .container {
-    padding: 1rem 2rem;
+    padding: var(--padding-container-mobile);
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 100%;
+  }
+
+.nav__header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 5rem;
 }
 
 .nav__imagen {
-    background-image: url(/assets/tablet/image-hero.png);
-    min-width: 20rem;
-    min-height: 50vh;
+    margin-bottom: 4rem;
+}
+.nav__title {
+    color: var(--Black);
+    font-weight: bold;
+    font-size: 5rem;
+    text-align: center;
+    margin-bottom: 4rem;
+    
+}
+
+.nav__text {
+    color: var(--Gray);
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 4rem;
+
+}
+
+.container__btn {
+    display: flex;
+    flex-direction: column;
+gap: 2rem;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.btn--blue {
+
+padding: 1.5rem 2.5rem;
+border-radius: 2rem;
+background-color: var(--Soft-blue);
+color: var(--white);
+}
+
+.text--opacity {
+    color: var(--Light-blue);
+}
+
+.btn--purpure {
+    padding: 1.5rem 2rem;
+    border-radius: 2rem;
+background-color: var(--purpure-dark);
+color: var(--white);
+}
+
+.container__main {
+
+    position: relative;
+}
+
+.imagen__arrow-number {
+margin: auto;
+}
+
+.main__ilustration {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2rem;
+    margin: 4rem 0;
+    
+}
+
+.ilustration__imagen {
+    object-fit: cover;
+    width: 100%;
+}
+
+.info__text--blue {
+    color: var(--Soft-blue);
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.info__title {
+    color: var(--Black);
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.info__text {
+    color: var(--Gray);
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    margin-bottom: 2rem;
+}
+
+.footer__container {
+    background-image: url(/assets/mobile/image-footer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
