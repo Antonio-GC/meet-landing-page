@@ -20,14 +20,14 @@
     <title>Frontend Mentor | Meet landing page</title>
   </head>
   <body>
-    <header class="nav__header">
+    <header class="header__nav">
       <div class="container">
         <nav class="nav__header">
           <img src="/assets/logo.svg" alt="" />
 
           <div>
-            <div>
-              <div>
+            <div class="nav--grid">
+              <div class="nav__ilustration">
                 <img
                   class="nav__imagen"
                   src="/assets/tablet/image-hero.png"
@@ -43,11 +43,12 @@
                 </p>
                 <div class="container__btn">
                   <button class="btn--blue">
-                  Download <span class="text--opacity">v1.3</span>
-                </button>
-                <button class="btn--purpure">What is it?</button>
+                    Download <span class="text--opacity">v1.3</span>
+                  </button>
+                  <button class="btn--purpure">What is it?</button>
                 </div>
-                
+              </div>
+              <div class="nav__ilustration--second">
               </div>
             </div>
           </div>
@@ -56,40 +57,50 @@
     </header>
     <main class="container__main">
       <div class="container">
-
-   
-      <img class="imagen__arrow-number" src="/assets/Group 6.png" alt="" />
-      <div class="main__ilustration">
-        <img class="ilustration__imagen" src="/assets/Bitmap.png" alt="" />
-        <img class="ilustration__imagen" src="/assets/Bitmap Copy.png" alt="" />
-        <img class="ilustration__imagen" src="/assets/Bitmap Copy 2.png" alt="" />
-        <img class="ilustration__imagen" src="/assets/Bitmap Copy 3.png" alt="" />
+        <img class="imagen__arrow-number" src="/assets/Group 6.png" alt="" />
+        <div class="main__ilustration">
+          <img class="ilustration__imagen" src="/assets/Bitmap.png" alt="" />
+          <img
+            class="ilustration__imagen"
+            src="/assets/Bitmap Copy.png"
+            alt=""
+          />
+          <img
+            class="ilustration__imagen"
+            src="/assets/Bitmap Copy 2.png"
+            alt=""
+          />
+          <img
+            class="ilustration__imagen"
+            src="/assets/Bitmap Copy 3.png"
+            alt=""
+          />
+        </div>
+        <div class="info">
+          <p class="info__text--blue">Built for modern use</p>
+          <h3 class="info__title">Smarter meetings, all in one place</h3>
+          <p class="info__text">
+            Send messages, share files, show your screen, and record your
+            meetings — all in one workspace. Control who can join with
+            invite-only team access, data encryption, and data export.
+          </p>
+        </div>
       </div>
-      <div class="info">
-        <p class="info__text--blue">Built for modern use</p>
-        <h3 class="info__title">Smarter meetings, all in one place</h3>
-        <p class="info__text">
-          Send messages, share files, show your screen, and record your meetings
-          — all in one workspace. Control who can join with invite-only team
-          access, data encryption, and data export.
-        </p>
-      </div>
-    </div>
     </main>
 
     <footer class="footer__container">
       <div class="container">
         <div class="footer__flex">
           <h3 class="footer__title">Experience more together</h3>
-      <p class="footer__text">
-        Stay connected with reliable HD meetings and unlimited one-on-one and
-        group video sessions.
-      </p>
-      <button class="btn--purpure">Download <span class="text--opacity-purpre">v1.3</span></button>
+          <p class="footer__text">
+            Stay connected with reliable HD meetings and unlimited one-on-one
+            and group video sessions.
+          </p>
+          <button class="btn--purpure">
+            Download <span class="text--opacity-purpre">v1.3</span>
+          </button>
         </div>
-        
       </div>
-      
     </footer>
   </body>
 </html>

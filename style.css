@@ -48,6 +48,10 @@ body {
     width: 100%;
   }
 
+  .header__nav {
+    margin: 2rem;
+  }
+
 .nav__header{
     display: flex;
     flex-direction: column;
@@ -114,7 +118,6 @@ margin: auto;
 .main__ilustration {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
     gap: 2rem;
     margin: 4rem 0;
     
@@ -151,8 +154,7 @@ margin: auto;
 
 .footer__container {
     background-color: var(--Soft-blue) transparent inherit;
-    background-image: url(/assets/mobile/image-footer.jpg);
-    
+    background-image: url(/assets/tablet/image_footer.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -183,4 +185,58 @@ margin: auto;
     flex-direction: column;
     row-gap: 3rem;
 
+}
+
+@media (min-width: 768px) {
+    .main__ilustration {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+        margin: 4rem 0;
+        
+    }
+
+    .container__btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: 2rem;
+    }
+
+}
+
+@media (min-width: 1440px) {
+.nav--grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.nav__ilustration {
+    background-image: url(/assets/desktop/image-hero-left.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+}
+
+.nav__imagen {
+    display: none;
+}
+
+.nav__ilustration--second {
+    background-image: url(/assets/desktop/image-hero-right.png);
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.info{
+padding: 0 40rem;
+}
+
+.footer__flex {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20rem;
+}
 }
